@@ -6,3 +6,25 @@
   &:not(:last-child) {
   }
 }
+
+.grid {
+  display: grid;
+  // background-color: red;
+  gap: 2.4rem;
+  max-width: $grid-width;
+  margin: 0 auto;
+
+  &__2--cols {
+    grid-template-columns: repeat(2, 1fr);
+    // grid-template-columns: 1fr 1fr;
+  }
+
+  &__2--rows {
+    grid-template-rows: repeat(2, 1fr);
+    // grid-template-rows: 1fr 1fr;
+  }
+
+  // div {
+  //   background-color: red;
+  // }
+}
