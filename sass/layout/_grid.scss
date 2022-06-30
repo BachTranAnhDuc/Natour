@@ -19,6 +19,17 @@
     // grid-template-columns: 1fr 1fr;
   }
 
+  &__3--cols {
+    grid-template-columns: repeat(3, 1fr);
+    // grid-template-columns: 1fr 1fr;
+  }
+
+  &__4--cols {
+    grid-template-columns: repeat(4, 1fr);
+    gap: 4.8rem;
+    // grid-template-columns: 1fr 1fr;
+  }
+
   &__2--rows {
     grid-template-rows: repeat(2, 1fr);
     // grid-template-rows: 1fr 1fr;
