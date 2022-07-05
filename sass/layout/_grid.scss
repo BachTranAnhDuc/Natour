@@ -17,6 +17,18 @@
   &__2--cols {
     grid-template-columns: repeat(2, 1fr);
     // grid-template-columns: 1fr 1fr;
+
+    &--small {
+      gap: 0.8rem;
+    }
+
+    &--medium {
+      gap: 1.6rem;
+    }
+
+    &--13 {
+      grid-template-columns: 1fr 3fr;
+    }
   }
 
   &__3--cols {
@@ -33,6 +45,19 @@
   &__2--rows {
     grid-template-rows: repeat(2, 1fr);
     // grid-template-rows: 1fr 1fr;
+
+    &__48 {
+      row-gap: 8rem;
+    }
+  }
+
+  &__3--rows {
+    grid-template-rows: repeat(3, 1fr);
+    // grid-template-rows: 1fr 1fr;
+
+    &__8 {
+      row-gap: 8rem;
+    }
   }
 
   &__gap--48 {
