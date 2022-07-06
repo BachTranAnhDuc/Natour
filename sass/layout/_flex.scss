@@ -1,0 +1,34 @@
+// --- SPACE SYSTEM
+// 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
+
+.flexbox {
+  display: flex;
+
+  &__verticle {
+    flex-direction: column;
+  }
+
+  &__horizon {
+    flex-direction: row;
+
+    &__space-between {
+      justify-content: space-between;
+    }
+  }
+
+  &--small {
+    gap: 1.6rem;
+  }
+
+  &--medium {
+    gap: 2.4rem;
+  }
+
+  &--big {
+    gap: 3.2rem;
+  }
+
+  &--huge {
+    gap: 4.8rem;
+  }
+}
