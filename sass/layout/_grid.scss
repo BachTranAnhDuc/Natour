@@ -33,6 +33,10 @@
     &--13 {
       grid-template-columns: 1fr 3fr;
     }
+
+    &--12 {
+      grid-template-columns: 1fr 2fr;
+    }
   }
 
   &__3--cols {
@@ -52,6 +56,10 @@
 
     &__48 {
       row-gap: 8rem;
+    }
+
+    &__no-gap {
+      gap: 0;
     }
   }
 

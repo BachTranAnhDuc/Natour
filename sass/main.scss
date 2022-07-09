@@ -78,9 +78,11 @@ default: 1rem
 @import "components/story";
 @import "components/bg-video";
 @import "components/form";
+@import "components/popup";
 
 @import "layout/grid";
 @import "layout/flex";
+@import "layout/navigation";
 @import "layout/header";
 @import "layout/footer";
 
