@@ -8,6 +8,9 @@
 
   z-index: 99999;
 
+  opacity: 0;
+  visibility: hidden;
+
   &__content {
     width: 75%;
     // height: 50rem;
@@ -15,6 +18,17 @@
     box-shadow: 0 2rem 4rem rgba($color-black, 0.2);
 
     @include abscenter;
+
+    opacity: 0;
+
+    transform: translate(-50%, -50%) scale(0.25);
+
+    transition: all 0.5s 0.2s;
+  }
+
+  &:target &__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
   }
 
   &__left {
@@ -37,6 +51,7 @@
   &__text {
     // margin-top: 5rem;
     // align-self: center;
+    position: relative;
   }
 
   &__para {
@@ -50,5 +65,26 @@
   &__img {
     max-width: 100%;
     display: block;
+  }
+
+  &:target {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  &__close:link,
+  :visited {
+    display: inline-block;
+    color: $color-grey-dark;
+    text-decoration: none;
+
+    position: absolute;
+    top: 0;
+    right: 0;
+    line-height: 1;
+  }
+
+  &__close:hover {
+    color: $color-primary;
   }
 }

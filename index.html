@@ -61,7 +61,9 @@
           <span class="heading-primary--sub">is where life happens</span>
         </h1>
 
-        <a href="#" class="btn btn--white btn--animated">Discover our tours</a>
+        <a href="#section-tours" class="btn btn--white btn--animated"
+          >Discover our tours</a
+        >
       </div>
     </header>
 
@@ -162,7 +164,7 @@
         </div>
       </section>
 
-      <section class="section-tours">
+      <section class="section-tours" id="section-tours">
         <div class="u-center-text u-margin-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -193,7 +195,7 @@
                   <p class="card__price-value">$297</p>
                 </div>
 
-                <a href="#" class="btn btn--white">Book now!</a>
+                <a href="#popup" class="btn btn--white">Book now!</a>
               </div>
             </div>
           </div>
@@ -222,7 +224,7 @@
                   <p class="card__price-value">$497</p>
                 </div>
 
-                <a href="#" class="btn btn--white">Book now!</a>
+                <a href="#popup" class="btn btn--white">Book now!</a>
               </div>
             </div>
           </div>
@@ -251,7 +253,7 @@
                   <p class="card__price-value">$897</p>
                 </div>
 
-                <a href="#" class="btn btn--white">Book now!</a>
+                <a href="#popup" class="btn btn--white">Book now!</a>
               </div>
             </div>
           </div>
@@ -431,7 +433,7 @@
       </div>
     </footer>
 
-    <div class="popup">
+    <div class="popup" id="popup">
       <div class="popup__content grid grid__2--cols grid__2--cols--12">
         <div class="popup__left">
           <!-- <p>left</p> -->
@@ -440,6 +442,7 @@
         </div>
         <div class="popup__right">
           <div class="popup__text">
+            <a href="#section-tours" class="popup__close">&times;</a>
             <h2 class="heading-secondary u-margin-bottom-small">
               Start booking now
             </h2>
